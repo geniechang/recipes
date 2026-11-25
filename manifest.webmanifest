@@ -1,0 +1,16 @@
+{
+  "name": "我的食譜",
+  "short_name": "食譜",
+  "description": "收藏、整理、調整份量的個人食譜本，手機與電腦同步。",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf6",
+  "theme_color": "#c7361e",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
