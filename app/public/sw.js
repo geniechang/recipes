@@ -7,7 +7,7 @@ const SHELL = 'shell-' + VERSION;
 const COVERS = 'covers-v1';
 const MAX_COVERS = 100;
 const ASSETS = __ASSETS__;
-const PRECACHE = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/apple-touch-icon.png', ...ASSETS];
+const PRECACHE = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon.svg?v=2', 'icons/icon-192.png?v=2', 'icons/apple-touch-icon.png?v=2', ...ASSETS];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(SHELL).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
