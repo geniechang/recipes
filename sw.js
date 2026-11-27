@@ -2,11 +2,11 @@
 // - App shell (HTML/JS/CSS/icons): precached at install, replaced when a new build is deployed.
 // - Cover photos (covers/*.jpg): cached the first time they're shown; max 100, oldest removed.
 // - recipes.json is NOT cached here: the app keeps its own copy and refreshes it in the background.
-const VERSION = '20261127121217';
+const VERSION = '20261127121508';
 const SHELL = 'shell-' + VERSION;
 const COVERS = 'covers-v1';
 const MAX_COVERS = 100;
-const ASSETS = ["assets/index-BTkHIcDV.css","assets/index-D-dsuab1.js","assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2","assets/inter-cyrillic-wght-normal-DqGufNeO.woff2","assets/inter-greek-ext-wght-normal-DlzME5K_.woff2","assets/inter-greek-wght-normal-CkhJZR-_.woff2","assets/inter-latin-ext-wght-normal-DO1Apj_S.woff2","assets/inter-latin-wght-normal-Dx4kXJAl.woff2","assets/inter-tight-cyrillic-ext-wght-normal-okcGN4Nq.woff2","assets/inter-tight-cyrillic-wght-normal-BS41q_Tv.woff2","assets/inter-tight-greek-ext-wght-normal-DQgQPNk4.woff2","assets/inter-tight-greek-wght-normal-sS1B39LI.woff2","assets/inter-tight-latin-ext-wght-normal-B4u9PlvR.woff2","assets/inter-tight-latin-wght-normal-DX-nOvPD.woff2","assets/inter-tight-vietnamese-wght-normal-TKKdAiBA.woff2","assets/inter-vietnamese-wght-normal-CBcvBZtf.woff2"];
+const ASSETS = ["assets/index-BTkHIcDV.css","assets/index-b20JQG1-.js","assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2","assets/inter-cyrillic-wght-normal-DqGufNeO.woff2","assets/inter-greek-ext-wght-normal-DlzME5K_.woff2","assets/inter-greek-wght-normal-CkhJZR-_.woff2","assets/inter-latin-ext-wght-normal-DO1Apj_S.woff2","assets/inter-latin-wght-normal-Dx4kXJAl.woff2","assets/inter-tight-cyrillic-ext-wght-normal-okcGN4Nq.woff2","assets/inter-tight-cyrillic-wght-normal-BS41q_Tv.woff2","assets/inter-tight-greek-ext-wght-normal-DQgQPNk4.woff2","assets/inter-tight-greek-wght-normal-sS1B39LI.woff2","assets/inter-tight-latin-ext-wght-normal-B4u9PlvR.woff2","assets/inter-tight-latin-wght-normal-DX-nOvPD.woff2","assets/inter-tight-vietnamese-wght-normal-TKKdAiBA.woff2","assets/inter-vietnamese-wght-normal-CBcvBZtf.woff2"];
 const PRECACHE = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/apple-touch-icon.png', ...ASSETS];
 
 self.addEventListener('install', (e) => {

@@ -58,6 +58,10 @@
   }
   $effect(() => () => { lock?.release(); });
 
+  // Yield steps: ¼ · ½ · ¾ · 1 · 2 · 3 …  (below 1 the stepper moves in quarters)
+  function stepDown() { servings = servings > 1 ? Math.ceil(servings) - 1 : Math.max(0.25, servings - 0.25); }
+  function stepUp() { servings = servings < 1 ? servings + 0.25 : Math.floor(servings) + 1; }
+
   const pad = (n) => String(n).padStart(2, '0');
   function ingName(item) { return lt(ings.get(item.ref)?.name, lang) || item.ref; }
   function amt(item) { return formatAmount(item, { lang, system, scale }); }
@@ -110,9 +114,9 @@
           <div class="m">
             <span class="label muted" class:zh={lang === 'zh'}>{t.yieldLabel}</span>
             <div class="stepper">
-              <button aria-label="−" disabled={servings <= 1} onclick={() => (servings = Math.max(1, servings - 1))}><Icon name="minus" size={16} stroke={2} /></button>
+              <button aria-label="−" disabled={servings <= 0.25} onclick={stepDown}><Icon name="minus" size={16} stroke={2} /></button>
               <span class="mv tnum">{yieldText()}</span>
-              <button aria-label="+" onclick={() => (servings += 1)}><Icon name="plus" size={16} stroke={2} /></button>
+              <button aria-label="+" onclick={stepUp}><Icon name="plus" size={16} stroke={2} /></button>
             </div>
           </div>
         {/if}
