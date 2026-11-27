@@ -1,41 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>我的食譜</title>
-<meta name="theme-color" content="#c7361e">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="食譜">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="top">
-  <div class="top-in">
-    <a href="#/" class="brand">我的食譜</a>
-    <button id="syncBtn" class="sync" type="button" aria-label="帳號與同步"><span class="dot"></span><span id="syncText">本機</span></button>
-  </div>
-</header>
-
-<main id="app" aria-live="polite"></main>
-
-<a href="#/new" id="fab" class="fab" aria-label="新增食譜">＋ 新增食譜</a>
-
-<dialog id="sheet" class="sheet">
-  <div class="sheet-in" id="sheetBody"></div>
-</dialog>
-
-<div id="toast" class="toast" role="status"></div>
-<input type="file" id="importFile" accept="application/json,.json" hidden>
-
-<script type="module" src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>食譜</title>
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="食譜" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <script type="module" crossorigin src="./assets/index-I-5Y1W4t.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BTkHIcDV.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
 </html>

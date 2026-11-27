@@ -1,17 +1,25 @@
-# 我的食譜
+# 食譜 (Recipes)
 
-個人食譜 App（PWA），可以安裝到手機和電腦的主畫面。
+A small read-and-cook web app for my own recipes, served by GitHub Pages at
+https://geniechang.github.io/recipes/.
 
-- 網址：https://geniechang.github.io/recipes/
-- 食譜資料存在私人 repo `geniechang/recipes-data` 的 `recipes.json`，每次修改都會留下一個 commit。
-- 每台裝置第一次使用時，按右上角「連接 GitHub 以同步」，貼上只能存取 `recipes-data` 的 GitHub 金鑰（Contents：Read and write）。
+- **Data** lives in the private repo `geniechang/recipes-data` (`recipes.json`, spec v4.1).
+  The app reads it through the GitHub contents API with a fine-grained access key stored on the device.
+  The only thing the app writes back is bookmarks.
+- **Covers** are AI-generated illustrations in `covers/<recipe id>.jpg` (4:3, 1000 px wide).
+- **Source** is in `app/` (Vite + Svelte 5). The build writes the site to the repo root.
 
-## 檔案
+## Build
 
-| 檔案 | 用途 |
-|---|---|
-| `index.html`, `style.css`, `app.js` | App 本身 |
-| `config.js` | 資料 repo 的位置 |
-| `sw.js`, `manifest.webmanifest`, `icons/` | 離線使用與安裝到主畫面 |
+```sh
+cd app
+npm install
+npm run build   # writes ../index.html, ../assets/, ../sw.js, icons and manifest
+```
 
-修改 `app.js` 或 `style.css` 後，請把 `sw.js` 裡的 `CACHE` 版本號加一，已安裝的裝置才會更新。
+Commit the built files together with the source. GitHub Pages serves the root of `main`.
+
+## Access key
+
+Create a fine-grained personal access token with access to `recipes-data` only and
+**Contents: Read and write**, then paste it on the app's Connect screen.

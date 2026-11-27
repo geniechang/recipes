@@ -1,0 +1,87 @@
+/* Design tokens — mirrored from the Paper file "Recipe" (Tailwind v4 naming). Keep in sync with Paper. */
+:root {
+  --color-background: #FFFFFF;
+  --color-surface: #F2F2F0;
+  --color-border: #E2E2E0;
+  --color-border-strong: #CCCCCC;
+  --color-text-muted: #6B6B70;
+  --color-text: #0E0E10;
+  --color-on-primary: #FFFFFF;
+  --color-primary: #C94A15;
+  --color-primary-light: #FF7A3D;
+  --color-primary-text: #B03C0C;
+  --color-pressed: rgb(14 14 16 / 7%);
+  --color-shadow: rgb(14 14 16 / 14%);
+  --color-glass: rgb(255 255 255 / 62%);
+  --color-glass-border: rgb(255 255 255 / 70%);
+  --color-glass-highlight: rgb(255 255 255 / 90%);
+  --color-danger: #D2362A;
+
+  --font-display: "Inter Tight Variable", "Inter Tight", -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+  --font-body: "Inter Variable", "Inter", -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+
+  --text-label: 11px;
+  --text-xs: 12px;
+  --text-caption: 13px;
+  --text-sm: 14px;
+  --text-md: 15px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 32px;
+  --text-display: 44px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --tracking-tight: -0.035em;
+  --tracking-snug: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-label: 0.12em;
+
+  --leading-label: 14px;
+  --leading-xs: 16px;
+  --leading-sm: 18px;
+  --leading-md: 20px;
+  --leading-base: 22px;
+  --leading-lg: 24px;
+  --leading-relaxed: 26px;
+  --leading-title: 28px;
+  --leading-headline: 34px;
+  --leading-display: 46px;
+
+  --spacing-0-5: 2px;
+  --spacing-1: 4px;
+  --spacing-1-5: 6px;
+  --spacing-2: 8px;
+  --spacing-2-5: 10px;
+  --spacing-3: 12px;
+  --spacing-3-5: 14px;
+  --spacing-4: 16px;
+  --spacing-4-5: 18px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-7-5: 30px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-11: 44px;
+  --spacing-12: 48px;
+  --spacing-15: 60px;
+  --spacing-30: 120px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --radius-full: 999px;
+
+  --opacity-subtle: 12%;
+  --opacity-muted: 40%;
+
+  --container-mobile: 342px;
+}
