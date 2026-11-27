@@ -2,7 +2,7 @@
 // - App shell (HTML/JS/CSS/icons): precached at install, replaced when a new build is deployed.
 // - Cover photos (covers/*.jpg): cached the first time they're shown; max 100, oldest removed.
 // - recipes.json is NOT cached here: the app keeps its own copy and refreshes it in the background.
-const VERSION = '20261127112155';
+const VERSION = '20261127120935';
 const SHELL = 'shell-' + VERSION;
 const COVERS = 'covers-v1';
 const MAX_COVERS = 100;
