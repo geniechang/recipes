@@ -33,7 +33,7 @@
   </header>
 
   {#if !app.token || expired}
-    <EmptyState icon="cloud-off" title={expired ? t.keyExpired : t.notConnected} body={expired ? t.keyExpiredBody : t.notConnectedBody}>
+    <EmptyState icon={expired ? 'key' : 'cloud-off'} title={expired ? t.keyExpired : t.notConnected} body={expired ? t.keyExpiredBody : t.notConnectedBody}>
       <button class="btn-primary" onclick={() => go('/connect')}>{expired ? t.updateKey : t.connectStorage}</button>
     </EmptyState>
   {:else if !app.data}
